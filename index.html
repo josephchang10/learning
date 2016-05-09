@@ -29,6 +29,10 @@
             background-color: #fff !important;
             color: #f4511e;
         }
+        .logo {
+            color: #f4511e;
+            font-size: 200px;
+        }
         .navbar {
             margin-bottom: 0;
             background-color: #f4511e;
@@ -81,6 +85,21 @@
                 -webkit-transform: translateY(0%);
             }
         }
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .logo {
+                font-size: 150px;
+            }
+        }
     </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -96,8 +115,11 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="html">Html与CSS</a></li>
                 <li><a href="#bootstrap">BootStrap</a></li>
                 <li><a href="#nodejs">Node.js</a></li>
+                <li><a href="#editor">编辑器</a></li>
+                <li><a href="#github">GitHub</a></li>
             </ul>
         </div>
     </div>
@@ -107,24 +129,70 @@
     <h1>前端学习</h1>
     <p>入门教程推荐</p>
 </div>
-<div id="bootstrap" class="container-fluid">
-    <h2>Bootstrap</h2>
-    <h4>入门教程</h4>
-    <a href="http://www.w3schools.com/bootstrap/default.asp" class="btn btn-lg" role="button">Bootstrap Tutorial</a>
-    <h4>编辑器</h4>
-    <a href="https://www.jetbrains.com/webstorm/" class="btn btn-lg" role="button">WebStorm</a>
-    <p><a href="http://zhihu.com/question/19606319/answer/12453830">知乎问题“最好用的 JavaScript IDE 或编辑器是哪个？”</a></p>
-</div>
-<div id="nodejs" class="container-fluid bg-grey">
-    <h2>Node.js</h2>
-    <h4>入门教程</h4>
-    <a href="http://www.nodebeginner.org/index-zh-cn.html" class="btn btn-lg" role="button">Node入门</a>
-    <p><a href="http://zhihu.com/question/21567720/answer/43795625">知乎问题“如何系统地学习Node.js？”</a></p>
-    <h4>编辑器</h4>
-    <a href="https://www.jetbrains.com/webstorm/" class="btn btn-lg" role="button">WebStorm</a>
-    <p><a href="http://zhihu.com/question/19606319/answer/12453830">知乎问题“最好用的 JavaScript IDE 或编辑器是哪个？”</a></p>
-</div>
+<div id="html" class="container-fluid">
 
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>Html与CSS</h2>
+            <h4>入门教程</h4>
+            <a href="https://www.amazon.cn/gp/product/B00FF3P8FY/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1" class="btn btn-lg" role="button">Head First HTML与CSS(第2版)</a>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-book logo"></span>
+        </div>
+    </div>
+</div>
+<div id="bootstrap" class="container-fluid bg-grey">
+    <div class="row">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-globe logo slideanim"></span>
+        </div>
+        <div class="col-sm-8">
+            <h2>Bootstrap</h2>
+            <h4>入门教程</h4>
+            <a href="http://www.w3schools.com/bootstrap/default.asp" class="btn btn-lg" role="button">Bootstrap Tutorial</a>
+        </div>
+    </div>
+</div>
+<div id="nodejs" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>Node.js</h2>
+            <h4>入门教程</h4>
+            <a href="http://www.nodebeginner.org/index-zh-cn.html" class="btn btn-lg" role="button">Node入门</a>
+            <p><a href="http://zhihu.com/question/21567720/answer/43795625">知乎问题“如何系统地学习Node.js？”</a></p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-globe logo slideanim"></span>
+        </div>
+    </div>
+
+</div>
+<div id="editor" class="container-fluid bg-grey">
+    <div class="row">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-download logo slideanim"></span>
+        </div>
+        <div class="col-sm-8">
+            <h2>编辑器</h2>
+            <a href="https://www.jetbrains.com/webstorm/" class="btn btn-lg" role="button">WebStorm</a>
+            <p><a href="http://zhihu.com/question/19606319/answer/12453830">知乎问题“最好用的 JavaScript IDE 或编辑器是哪个？”</a></p>
+        </div>
+    </div>
+</div>
+<div id="github" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>GitHub</h2>
+            <h4>入门教程</h4>
+            <a href="https://www.amazon.cn/GitHub入门与实践-大塚弘记/dp/B011LPUB4M/ref=sr_1_1?ie=UTF8&qid=1462771431&sr=8-1&keywords=github" class="btn btn-lg" role="button">GitHub入门与实践</a>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-book logo"></span>
+        </div>
+    </div>
+
+</div>
 <script>
     $(document).ready(function(){
         // Add smooth scrolling to all links in navbar + footer link
